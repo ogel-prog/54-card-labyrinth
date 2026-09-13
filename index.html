@@ -168,11 +168,11 @@
   /* ---------- TOC ---------- */
   .toc-wrap{
     background: var(--void-2);
-    padding: 0 24px 72px;
+    padding: 24px 24px;
   }
   .toc{
     max-width: 880px;
-    margin: -64px auto 0;
+    margin: 0 auto;
     background: var(--void-3);
     border: 1px solid rgba(184,134,46,0.25);
     border-radius: 18px;
@@ -219,7 +219,7 @@
     background:
       radial-gradient(ellipse 60% 40% at 50% 0%, rgba(201,135,59,0.10), transparent 65%),
       var(--void);
-    padding: 56px 20px 24px;
+    padding: 0 24px 24px;
   }
 
   .sheet{
@@ -229,16 +229,16 @@
     background-image: radial-gradient(rgba(41,32,15,0.05) 1px, transparent 1px);
     background-size: 3px 3px;
     border-radius: 3px;
-    padding: 56px 40px 24px;
+    padding: 24px 36px 24px;
     box-shadow: var(--shadow), 0 0 90px rgba(201,135,59,0.06);
   }
 
   @media (max-width: 560px){
-    .sheet{ padding: 40px 22px 16px; }
+    .sheet{ padding: 16px 16px 16px; }
   }
 
   section.rule{
-    padding: 40px 0;
+    padding: 24px 0;
     border-bottom: 1px solid rgba(36,31,43,0.12);
   }
   section.rule:last-of-type{ border-bottom: none; }
@@ -342,7 +342,7 @@
   }
   .example .arrow{ color: var(--gold-light); }
 
-  /* ---------- 配置図（テーブルの見立て） ---------- */
+  /* ---------- 配置図(テーブルの見立て) ---------- */
   .table-diagram{
     display:flex;
     flex-direction:column;
@@ -429,7 +429,7 @@
   /* ---------- closing ---------- */
   .closing{
     text-align:center;
-    padding: 90px 24px 110px;
+    padding: 24px 24px 24px;
     background:
       radial-gradient(ellipse 50% 60% at 50% 30%, rgba(234,179,95,0.14), transparent 70%),
       var(--void);
@@ -545,9 +545,9 @@
   <section class="rule" id="s2">
     <div class="rule-head"><span class="rule-num">2</span><h2>内容物</h2></div>
     <ul>
-      <li>トランプ 1組（ジョーカー2枚を含む54枚）</li>
-      <li>6面ダイス（6D）× 1</li>
-      <li>20面ダイス（20D）× 2</li>
+      <li>トランプ 1組(ジョーカー2枚を含む54枚)</li>
+      <li>6面ダイス(6D)× 1</li>
+      <li>20面ダイス(20D)× 2</li>
       <li>スコアを記録するためのメモ</li>
     </ul>
     <h3>カードの数値</h3>
@@ -617,33 +617,33 @@
       </div>
     </div>
     <div class="diagram-legend">
-      <div><b>1</b>破棄エリア（横向き・復活しない）</div>
-      <div><b>2</b>アイテムエリア（横向き）</div>
-      <div><b>3</b>ダンジョンデッキ（縦向き）</div>
-      <div><b>A</b>HPエリア（20D）</div>
-      <div><b>B</b>モンスターエリア（20D）</div>
+      <div><b>1</b>破棄エリア(復活しない)</div>
+      <div><b>2</b>アイテムエリア</div>
+      <div><b>3</b>ダンジョンデッキ</div>
+      <div><b>A</b>HPエリア(20D)</div>
+      <div><b>B</b>モンスターエリア(20D)</div>
       <div><b>4</b>捨て札</div>
       <div><b>5〜7</b>場</div>
       <div><b>8</b>剣エリア</div>
       <div><b>9</b>盾エリア</div>
       <div><b>10</b>財布エリア</div>
-      <div><b>C</b>冒険ダイス（6D）</div>
-      <div><b>11・12</b>剣ストックエリア（横向き）</div>
-      <div><b>13・14</b>盾ストックエリア（横向き）</div>
+      <div><b>C</b>冒険ダイス(6D)</div>
+      <div><b>11・12</b>剣ストックエリア</div>
+      <div><b>13・14</b>盾ストックエリア</div>
     </div>
     <p class="legend">5〜7の「場」には、武具やゴールド、モンスターを探索の途中で展開します。</p>
   </section>
 
   <section class="rule" id="s5">
     <div class="rule-head"><span class="rule-num">5</span><h2>HP</h2></div>
-    <p>冒険者の最大HPは20です。<strong>各ターンの開始時にHPを1回復します</strong>（20を超えて回復することはありません）。</p>
+    <p>冒険者の最大HPは20です。<strong>各ターンの開始時にHPを1回復します</strong>(20を超えて回復することはありません)。</p>
     <p>ダメージを受けたり回復したりする場合は、HPエリアの20Dで管理します。</p>
     <p>HPが0になった場合、冒険者は力尽き、ただちにダンジョンから強制的に脱出します。この場合、現在持っている以下のカードをすべて失い、捨て札に置きます。</p>
     <ul>
       <li>剣</li>
       <li>盾</li>
       <li>財布エリアに入っているカード</li>
-      <li>アイテム（ジョーカー）</li>
+      <li>アイテム(ジョーカー)</li>
     </ul>
   </section>
 
@@ -684,7 +684,7 @@
     <h3>7-2. 獲得したカード</h3>
     <p><strong>ジョーカー</strong>：アイテムエリアに置きます。</p>
     <p><strong>J・Q・K</strong>：高価な財宝として、財布エリアに置きます。</p>
-    <p><strong>A〜10</strong>：そのイベントに対応する武具として使えます（剣イベント→剣エリア／盾イベント→盾エリア）。すぐに装備せず、ストックエリアに置いても構いません。</p>
+    <p><strong>A〜10</strong>：そのイベントに対応する武具として使えます(剣イベント→剣エリア／盾イベント→盾エリア)。すぐに装備せず、ストックエリアに置いても構いません。</p>
     <p>すでに武具を装備しており、新しい武具を装備する場合は、現在装備している武具をストックエリアへ移します。</p>
     <div class="callout">
       <h4>持ち運べる枚数</h4>
@@ -729,7 +729,7 @@
     <div class="rule-head"><span class="rule-num">10</span><h2>敵</h2></div>
     <p>6Dで「3：敵」または「6：敵」が出た場合、モンスターに遭遇します。</p>
     <p>ダンジョンデッキの上から1枚を表向きに場に出します。そのカードがモンスターです。</p>
-    <p>モンスターエリアのHPを、そのカードの数値と同じに設定します（通常のカード→カードの数値／ジョーカー→HP20）。モンスターエリアの20Dを使ってHPを管理し、<strong>戦闘モード</strong>に移行します。</p>
+    <p>モンスターエリアのHPを、そのカードの数値と同じに設定します(通常のカード→カードの数値／ジョーカー→HP20)。モンスターエリアの20Dを使ってHPを管理し、<strong>戦闘モード</strong>に移行します。</p>
   </section>
 
   <section class="rule" id="s11">
@@ -750,7 +750,7 @@
     <h3>11-2. 攻撃する</h3>
     <p>装備している剣の数値だけ、モンスターにダメージを与えます。剣を装備していない場合は、<strong>3ダメージ</strong>を与えます。</p>
     <p>攻撃に使用した剣とモンスターが<strong>同じスート</strong>の場合、与えるダメージは2倍になります。</p>
-    <div class="example">モンスター：♥7　装備中の剣：♥4<br><span class="arrow">→</span> 4 × 2 ＝ 8ダメージ（モンスターのHPを8減らす）</div>
+    <div class="example">モンスター：♥7　装備中の剣：♥4<br><span class="arrow">→</span> 4 × 2 ＝ 8ダメージ(モンスターのHPを8減らす)</div>
     <p>モンスターのHPが0以下になったら討伐成功です。</p>
 
     <div class="callout">
@@ -759,7 +759,7 @@
     </div>
 
     <h3>通常のモンスターを討伐した場合</h3>
-    <p>6Dを1回振り、ドロップを決定します（冒険の6Dと同じ対応です）。</p>
+    <p>6Dを1回振り、ドロップを決定します(冒険の6Dと同じ対応です)。</p>
     <table>
       <thead><tr><th>出目</th><th>ドロップ</th></tr></thead>
       <tbody>
@@ -782,8 +782,8 @@
       <li>攻撃した</li>
       <li>逃げることに失敗した</li>
     </ul>
-    <p>モンスターの攻撃力はモンスターカードの数値です（ジョーカーの場合は<strong>20</strong>）。</p>
-    <p>装備している盾とモンスターが同じスートの場合、受けるダメージは半分になります（端数は切り捨て）。</p>
+    <p>モンスターの攻撃力はモンスターカードの数値です(ジョーカーの場合は<strong>20</strong>)。</p>
+    <p>装備している盾とモンスターが同じスートの場合、受けるダメージは半分になります(端数は切り捨て)。</p>
     <div class="example">モンスター：♠7　盾：♠3<br>通常なら7ダメージ<br><span class="arrow">→</span> 7 ÷ 2 ＝ 3.5 → 切り捨てて 3ダメージ</div>
     <p>ダメージを受けたら、HPエリアの20Dを減らします。HPが0になった場合、ただちにダンジョンから強制脱出します。</p>
   </section>
@@ -800,14 +800,14 @@
   <section class="rule" id="s14">
     <div class="rule-head"><span class="rule-num">14</span><h2>逃げる</h2></div>
     <p>戦闘中に「逃げる」を選択できます。6Dを振ります。</p>
-    <p><strong>偶数（2・4・6）</strong>：逃走成功。そのまま冒険モードに戻ります。</p>
-    <p><strong>奇数（1・3・5）</strong>：ダンジョンカードを上から3枚捨て札にして逃走します。3枚を捨てられない場合は逃走失敗となり、モンスターの攻撃を受けます。</p>
+    <p><strong>偶数(2・4・6)</strong>：逃走成功。そのまま冒険モードに戻ります。</p>
+    <p><strong>奇数(1・3・5)</strong>：ダンジョンカードを上から3枚捨て札にして逃走します。3枚を捨てられない場合は逃走失敗となり、モンスターの攻撃を受けます。</p>
     <p>逃走に成功した場合、モンスターカードはダンジョンデッキの一番下に戻します。</p>
   </section>
 
   <section class="rule" id="s15">
     <div class="rule-head"><span class="rule-num">15</span><h2>ジョーカー</h2></div>
-    <p>ジョーカーは強力な特殊アイテムです。アイテムエリアにあるジョーカーは、自分が行動する前に使用できます（冒険モードでも戦闘モードでも使用可能）。</p>
+    <p>ジョーカーは強力な特殊アイテムです。アイテムエリアにあるジョーカーは、自分が行動する前に使用できます(冒険モードでも戦闘モードでも使用可能)。</p>
     <p>ジョーカーを使用すると、<strong>ただちにダンジョンから脱出します。</strong>使用したジョーカーは捨て札に置きます。ジョーカーは次のダンジョンには持ち越せません。</p>
     <div class="callout">
       <h4>ジョーカーの価値</h4>
@@ -818,7 +818,7 @@
   <section class="rule" id="s16">
     <div class="rule-head"><span class="rule-num">16</span><h2>ダンジョン踏破</h2></div>
     <p>冒険モードで、イベントの処理に必要な枚数のカードをダンジョンデッキから引けない場合、<strong>ダンジョン踏破</strong>となります。</p>
-    <div class="example">例）冒険6Dで1が出たので剣用のカードの選択肢を場に出す。<br>2枚しか出すことができないのでダンジョン踏破。</div>
+    <div class="example">例)冒険6Dで1が出たので剣用のカードの選択肢を場に出す。<br>2枚しか出すことができないのでダンジョン踏破。</div>
     <p>そのままダンジョンの外へ生還し、清算を行います。</p>
   </section>
 
@@ -866,7 +866,7 @@
   <section class="rule" id="s19">
     <div class="rule-head"><span class="rule-num">19</span><h2>ゲームの完全終了</h2></div>
     <p>次のダンジョンを準備するとき、4枚を永久に破棄します。その後、残ったダンジョンデッキが10枚未満なら、ダンジョンは力を使い果たして消滅します。<strong>ゲーム終了です。</strong></p>
-    <div class="example">例）<br>14枚 → 4枚永久破棄 → 10枚 → 冒険再開<br>13枚 → 4枚永久破棄 → 9枚 → ゲーム終了</div>
+    <div class="example">例)<br>14枚 → 4枚永久破棄 → 10枚 → 冒険再開<br>13枚 → 4枚永久破棄 → 9枚 → ゲーム終了</div>
     <p>ゲーム終了の場合は、保持しているカードをすべて精算してスコアを計算します。</p>
   </section>
 
